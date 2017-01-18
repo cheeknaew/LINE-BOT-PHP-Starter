@@ -17,11 +17,19 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
-			$messages = [
-				'type' => 'text',
-				'text' => "Earth เป็นคนหล่อมากๆ"
-			];
-
+			
+			if (strpos($text, 'Earth') !== false){
+				$messages = [
+					'type' => 'text',
+					'text' => "Earth เป็นคนหล่อมากๆ"
+				];
+			}
+			else {
+				$messages = [
+					'type' => 'text',
+					'text' => "I can't line"
+				];
+			}
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
