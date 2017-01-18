@@ -27,7 +27,7 @@ if (!is_null($events['events'])) {
 			else {
 				$messages = [
 					'type' => 'text',
-					'text' => "I can't line"
+					'text' => "I can't lie, i always say the truth"
 				];
 			}
 			// Make a POST Request to Messaging API to reply to sender
