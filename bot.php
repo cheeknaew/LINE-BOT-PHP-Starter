@@ -54,3 +54,9 @@ if (!is_null($events['events'])) {
 }
 echo "OK";
 //resource newt_button ( int $left , int $top , string $text );
+$form = newt_form();
+
+$ok_button = newt_button(5, 12, "Run Tool");
+    
+newt_form_add_component($form, $ok_button);
+
