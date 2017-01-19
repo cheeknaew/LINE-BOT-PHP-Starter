@@ -54,9 +54,11 @@ if (!is_null($events['events'])) {
 }
 echo "OK";
 //resource newt_button ( int $left , int $top , string $text );
-$form = newt_form();
+//$form = newt_form();
 
-$ok_button = newt_button(5, 12, "Run Tool");
+//$ok_button = newt_button(5, 12, "Run Tool");
     
-newt_form_add_component($form, $ok_button);
-
+//newt_form_add_component($form, $ok_button);
+$temp = fopen("php://stdin","r");
+$line = fgets($temp);
+echo $line;
