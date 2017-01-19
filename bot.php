@@ -159,7 +159,9 @@ $events = json_decode($content, true);
 // Validate parsed JSON data
 $replyToken = $event['replyToken'];
 			// Build message to reply back
-			
+			$text = $event['message']['text'];
+			// Get replyToken
+			$replyToken = $event['replyToken'];
 			$messages = ['type' => 'text',
 					'text' => "Earth เป็นคนหล่อมากๆ"
 				];
