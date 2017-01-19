@@ -59,15 +59,4 @@ echo "OK";
 //$ok_button = newt_button(5, 12, "Run Tool");
     
 //newt_form_add_component($form, $ok_button);
-<html>
-<body>
 
-<form action="demo_form.asp" method="get">
-First name: <input type="text" name="fname"><br>
-Last name: <input type="text" name="lname"><br>
-<button type="submit" value="Submit">Submit</button>
-<button type="reset" value="Reset">Reset</button>
-</form>
-
-</body>
-</html>
