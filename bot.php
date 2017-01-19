@@ -53,4 +53,4 @@ if (!is_null($events['events'])) {
 	}
 }
 echo "OK";
-resource newt_button ( int $left , int $top , string $text );
+//resource newt_button ( int $left , int $top , string $text );
