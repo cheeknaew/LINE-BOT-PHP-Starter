@@ -160,8 +160,7 @@ $events = json_decode($content, true);
 $replyToken = $event['replyToken'];
 			// Build message to reply back
 			
-			$messages = [
-					'type' => 'text',
+			$messages = ['type' => 'text',
 					'text' => "Earth เป็นคนหล่อมากๆ"
 				];
 			// Make a POST Request to Messaging API to reply to sender
