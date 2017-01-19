@@ -53,19 +53,3 @@ if (!is_null($events['events'])) {
 	}
 }
 echo "OK";
-//resource newt_button ( int $left , int $top , string $text );
-//$form = newt_form();
-
-//$ok_button = newt_button(5, 12, "Run Tool");
-    
-//newt_form_add_component($form, $ok_button);
-for ($i=0; $i < 3; $i++) {
-        $line = readline("Command: ");
-        readline_add_history($line);
-}
-
-//dump history
-print_r(readline_list_history());
-
-//dump variables
-print_r(readline_info());
