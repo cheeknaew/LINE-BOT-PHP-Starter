@@ -71,6 +71,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["name"])) {
     $nameErr = "Name is required";
 	echo "hooooooo";
+	  $access_token = '7+wBpEvBpTGZvspYENGA1vUXu80YJ0gPpkktFWd1WjdNbL3KRD9V7cjNNdwxF9NH+y4HXVskptlWs75fu9mwe3BU8+NP1W8csdSUImvH+BEm6Qp3gkwfqMs6UpJCCpbyFaYPCfof1dHsmuH3gk/2pQdB04t89/1O/w1cDnyilFU=';
+
+// Get POST body content
+	  $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient('<channel access token>');
+$bot = new \LINE\LINEBot($httpClient, ['channelSecret' => '<channel secret>']);
+
+$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hello');
+$response = $bot->pushMessage('<to>', $textMessageBuilder);
+
+echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
   } else {
     $name = test_input($_POST["name"]);
     // check if name only contains letters and whitespace
