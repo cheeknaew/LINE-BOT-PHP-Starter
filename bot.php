@@ -24,7 +24,7 @@ if (!is_null($events['events'])) {
 					'text' => "Earth เป็นคนหล่อมากๆ"
 				];
 			}
-			else if(strpos($text, 'หิวแล้ววววว')==true||strpos($text, 'กินไร')==true){
+			else if(strpos($text, 'หิวแล้ว')!==false||strpos($text, 'กินไร')!==false){
 				$messages = [
 					'type' => 'text',
 					'text' => "กินป้าน้อยสิ อาหารดี มีคุณภาพ"
