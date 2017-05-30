@@ -24,12 +24,18 @@ if (!is_null($events['events'])) {
 					'text' => "Earth เป็นคนหล่อมากๆ"
 				];
 			}
-			else {
+			else if(strpos($text, 'หิวแล้ววววว')==true||strpos($text, 'กินไร')==true){
+				$messages = [
+					'type' => 'text',
+					'text' => "กินป้าน้อยสิ อาหารดี มีคุณภาพ"
+				];
+			}
+			/*else {
 				$messages = [
 					'type' => 'text',
 					'text' => "I can't lie, i always say the truth"
 				];
-			}
+			}*/
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
